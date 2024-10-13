@@ -2,14 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sukiu.top/archives/</loc>
-  </url><url>
     <loc>https://sukiu.top/categories/</loc>
+    <lastmod>2024-10-13T21:20:02+08:00</lastmod>
   </url><url>
-    <loc>https://sukiu.top/search/</loc>
+    <loc>https://sukiu.top/tags/license/</loc>
+    <lastmod>2024-10-13T21:20:02+08:00</lastmod>
+  </url><url>
+    <loc>https://sukiu.top/categories/open-source/</loc>
+    <lastmod>2024-10-13T21:20:02+08:00</lastmod>
+  </url><url>
+    <loc>https://sukiu.top/posts/</loc>
+    <lastmod>2024-10-13T21:20:02+08:00</lastmod>
   </url><url>
     <loc>https://sukiu.top/tags/</loc>
+    <lastmod>2024-10-13T21:20:02+08:00</lastmod>
+  </url><url>
+    <loc>https://sukiu.top/posts/open-source-license/</loc>
+    <lastmod>2024-10-13T21:20:02+08:00</lastmod>
   </url><url>
     <loc>https://sukiu.top/</loc>
+    <lastmod>2024-10-13T21:20:02+08:00</lastmod>
+  </url><url>
+    <loc>https://sukiu.top/archives/</loc>
+  </url><url>
+    <loc>https://sukiu.top/search/</loc>
   </url>
 </urlset>
