@@ -1,0 +1,34 @@
+<script>
+    const textElement = document.querySelector('.profile_inner span');
+    let charIndex = 0;
+    let isDeleting = false;
+    let hitokotoText = '';
+    let typingInterval;
+    const typingSpeed = 180;
+    const deletingSpeed = 100;
+    const delayBetweenCycles = 2500;
+    function typeWriter() {
+        if (isDeleting) {
+            textElement.innerHTML = hitokotoText.slice(0, charIndex--);
+        } else {
+            textElement.innerHTML = hitokotoText.slice(0, ++charIndex);
+        }
+        if (!isDeleting && charIndex === hitokotoText.length) {
+            setTimeout(() => isDeleting = true, delayBetweenCycles);
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            clearInterval(typingInterval);
+            fetchHitokoto();
+            return;
+        }
+        const speed = isDeleting ? deletingSpeed : typingSpeed;
+        typingInterval = setTimeout(typeWriter, speed);
+    }
+    function fetchHitokoto() {
+        fetch('https://v1.hitokoto.cn?c=i')
+            .then(response => response.json())
+            .then(data => { hitokotoText = data.hitokoto; charIndex = 0; typeWriter(); })
+            .catch(console.error);
+    }
+    fetchHitokoto();
+</script>

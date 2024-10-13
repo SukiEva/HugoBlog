@@ -1,0 +1,20 @@
+.profile_inner h1+span {
+    position: relative;
+    display: inline-block;
+}
+
+.profile_inner h1+span::after {
+  content: '|';
+  position: absolute;
+  right: -10px;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}

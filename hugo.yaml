@@ -1,0 +1,52 @@
+baseURL: https://sukiu.top/
+languageCode: zh-cn
+title: 千反田
+theme: PaperMod
+timeZone: Asia/Shanghai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+menus:
+  main:
+    - identifier: Post
+      name: Post
+      url: /posts
+      weight: 10
+    - identifier: Archive
+      name: Archive
+      url: /archives
+      weight: 20
+
+params:
+    defaultTheme: auto
+    author: "SukiEva"
+    comments: true
+    ShowToc: true
+    TocOpen: true
+    ShowReadingTime: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowPostNavLinks: true
+    assets:
+        favicon: "/favicon.ico"
+    profileMode:
+      enabled: true
+      title: "SukiEva"
+      subtitle: "欲买桂花同载酒，终不似，少年游。"
+      imageUrl: "/avatar.jpg"
+      imageWidth: 120
+      imageHeight: 120
+      buttons:
+        - name: Blog
+          url: "https://blog.sukiu.top/"
+        - name: Travelling
+          url: "https://www.travellings.cn/go.html"
+    socialIcons:
+    - name: "github"
+      url: "https://github.com/SukiEva"
+    - name: "email"
+      url: "mailto:dev.suki@outlook.com"
