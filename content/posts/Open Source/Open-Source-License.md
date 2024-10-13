@@ -1,7 +1,7 @@
 ---
 title: 主流开源协议
 date: 2021-11-12T18:49:00+08:00
-lastmod: 2024-10-13T21:20:02+08:00
+lastmod: 2024-10-13T22:28:25+08:00
 categories: [Open Source]
 tags: [License]
 ---
