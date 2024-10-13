@@ -4,7 +4,7 @@
 {{- partial "index_profile.html" . }}
 {{- else }} {{/* if not profileMode */}}
 
-{{- if and (not .IsHome) (not .IsSection) .Title }}
+{{- if and (not .IsHome) (ne .RelPermalink "/posts/") .Title }}
 <header class="page-header">
   {{- partial "breadcrumbs.html" . }}
   <h1>
@@ -47,7 +47,7 @@
 
 {{- $paginator := .Paginate $pages }}
 
-{{- if and site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
+{{- if and (eq .RelPermalink "/posts/") site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
 {{- partial "home_info.html" . }}
 {{- end }}
 
