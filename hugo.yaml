@@ -5,6 +5,7 @@ theme: PaperMod
 timeZone: Asia/Shanghai
 
 params:
+    social: true
     defaultTheme: auto
     author: "SukiEva"
     comments: true
