@@ -4,27 +4,6 @@ title: 千反田
 theme: PaperMod
 timeZone: Asia/Shanghai
 
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON # necessary for search
-
-menus:
-  main:
-    - identifier: Post
-      name: Post
-      url: /posts
-      weight: 10
-    - identifier: Archive
-      name: Archive
-      url: /archives
-      weight: 20
-    - identifier: Search
-      name: Search
-      url: /search
-      weight: 30
-
 params:
     defaultTheme: auto
     author: "SukiEva"
